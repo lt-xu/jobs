@@ -31,11 +31,7 @@ def get_all_jobs():
     driver.close()
 
 def add_time_info():   #笔试面试等信息
-    flag = False      #info是否写入的标志
-    for doc in db.bilibili.find():
-        if 'info' in doc:    #判断doc（dict）中是否有info（key）
-            flag = True
-    if not flag:      #不存在info 则写入
+    if db.bilibli.find_one({'info':{'$exists':True}}) is None:
         db.bilibili.insert_one({'info':'内推：8.15-10.16 网申：8.24-10.16 笔试：第一批9.7 第二批9.21 第三批10.18 面试：内推8月下旬-9月 网申9月-10月 （可远程面试）2018年宣讲城市：成都 武汉 合肥 北京 上海 广州'})
 
 if __name__ == '__main__':

@@ -117,11 +117,7 @@ def get_all_jobs():
     driver.close()
 
 def add_time_info():   #笔试面试等信息
-    flag = False      #info是否写入的标志
-    for doc in db.zhihu.find():
-        if 'info' in doc:   #判断doc（dict）中是否有info（key）
-            flag = True
-    if not flag:      #不存在info 则写入
+    if db.zhihu.find_one({'info':{'$exists':True}}) is None:
         db.zhihu.insert_one({'info':'消息：8.1 网申/内推：8.1-9.30 openDay:9月除 在线笔试:8月底-10月出 宣讲+面试9月初-10月中 offer：9月中-10月底'})
 
 

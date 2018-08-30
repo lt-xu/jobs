@@ -53,11 +53,7 @@ def get_all_jobs(url,total_page):
     driver.close()
 
 def add_time_info():   #笔试面试等信息
-    flag = False      #info是否写入的标志
-    for doc in db.bytedance.find():
-        if 'info' in doc:   #判断doc（dict）中是否有info（key）
-            flag = True
-    if not flag:      #不存在info 则写入
+    if db.bytedance.find_one({'info':{'$exists':True}}) is None:
         db.bytedance.insert_one({'info':'网申及内推：8.1-12.31 宣讲会：8月底-10月中旬 笔试：8月中旬-1月中旬 面试：8月中旬-1月中旬 offer：9月中旬开始'})
 
 if __name__ == '__main__':

@@ -84,11 +84,7 @@ def get_all_jobs():
 
 
 def add_time_info():   #笔试面试等信息
-    flag = False      #info是否写入的标志
-    for doc in db.xiaomi.find():
-        if 'info' in doc:   #判断doc（dict）中是否有info（key）
-            flag = True
-    if not flag:      #不存在info 则写入
+    if db.xiaomi.find_one({'info':{'$exists':True}}) is None:
         db.xiaomi.insert_one({'info':'消息：8.15 内推：8.15-9.15 网申：8.15-12月初 笔试：9.20和27号 面试：8月底-12月中 offer：10月-12月'})
 
 

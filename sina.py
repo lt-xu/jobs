@@ -83,11 +83,7 @@ def get_all_jobs():
     get_jobs_per_page()
 
 def add_time_info():   #笔试面试等信息
-    flag = False      #info是否写入的标志
-    for doc in db.sina.find():
-        if 'info' in doc:   #判断doc（dict）中是否有info（key）
-            flag = True
-    if not flag:      #不存在info 则写入
+    if db.sina.find_one({'info':{'$exists':True}}) is None:
         db.sina.insert_one({'info':'消息：8.6 网申&内推：8.6-9.14 宣讲：9月除 笔试：9.15和16 面试：9月底（地点：哈尔滨 沈阳 成都 西安 武汉 北京） offer 10月中下旬'})
 
 if __name__ == '__main__':
