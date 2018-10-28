@@ -6,6 +6,10 @@ import re
 import pymongo
 import json
 import requests
+import jieba
+import jieba.analyse
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 def job_details(job_id):
     base_url = 'https://job.bytedance.com/api/recruitment/position/'
@@ -56,10 +60,52 @@ def add_time_info():   #笔试面试等信息
     if db.bytedance.find_one({'info':{'$exists':True}}) is None:
         db.bytedance.insert_one({'info':'网申及内推：8.1-12.31 宣讲会：8月底-10月中旬 笔试：8月中旬-1月中旬 面试：8月中旬-1月中旬 offer：9月中旬开始'})
 
+def analyse():
+    # 分析任职要求
+    jobs = db.bytedance.aggregate([
+        {"$group": {"_id": "$title", "qualifications": {"$first": "$qualifications"}}},
+    ])      #去重，在字节跳动职位信息中，同一title，不同地点，视为不同岗位，所以岗位要求会重复
+
+    qual_tests = ""    #任职要求总文本
+    for job in jobs:
+        if job['qualifications']:
+            qual_test = ''.join(job['qualifications'])
+            qual_tests += qual_test
+    cut_text = " ".join(jieba.cut(qual_tests))
+    keywords = jieba.analyse.extract_tags(cut_text,topK=500, withWeight=True,allowPOS=('a','e','n','nr','ns'))
+
+    text_cloud = dict(keywords)
+    # print(text_cloud)
+    cloud = WordCloud(
+        # 设置字体，不指定就会出现乱码
+        font_path="/usr/share/fonts/winFonts/msyhbd.ttc",
+        # 设置背景色
+        background_color='white',
+        # 词云形状
+        # mask=color_mask,
+        # 允许最大词汇
+        max_words=2000,
+        # 最大号字体
+        max_font_size=40,
+        height=500,
+        width= 1000
+    )
+    wordcloud = cloud.generate_from_frequencies(text_cloud)
+    wordcloud.to_file("1.jpg")  # 保存图片
+
+
+    # Display the generated image:
+    # the matplotlib way:
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    return
+
 if __name__ == '__main__':
     client = pymongo.MongoClient()
     db = client['jobs']
     url = 'https://job.bytedance.com/campus/position?summary=873&city=&q1=&position_type='
     total_page = 5
+    analyse()
     # add_time_info()
     # get_all_jobs(url,total_page)
