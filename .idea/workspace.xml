@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5efb327-1b5b-40c1-a607-d68ce760043a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytedance.py" beforeDir="false" afterPath="$PROJECT_DIR$/bytedance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +39,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="22" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -60,7 +57,7 @@
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.90" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,13 +90,13 @@
           <entry key="Python Console" value="25" />
           <entry key="md" value="23" />
           <entry key="py" value="10068" />
-          <entry key="txt" value="31" />
+          <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="23" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="Python" value="10093" />
         </counts>
       </usages-collector>
@@ -109,21 +106,15 @@
     <favorites_list name="jobs" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mongo://client/jobs/bytedance">
-          <provider selected="true" editor-type-id="MongoData" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bytedance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="108" column="13" lean-forward="true" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+            <state relative-caret-position="186">
+              <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
               <folding>
                 <element signature="e#19#49#0" expanded="true" />
                 <marker date="1540741430113" expanded="true" signature="261:1179" ph="..." />
-                <marker date="1540741430113" expanded="true" signature="2152:3316" ph="..." />
               </folding>
             </state>
           </provider>
@@ -400,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535624597115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add analysis to datadance">
+      <created>1540741832808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540741832810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -413,10 +411,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="93" width="1840" height="793" extended-state="0" />
+    <frame x="0" y="-5" width="1920" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.14882943" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.14247599" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.14247599" />
       <window_info id="Favorites" order="2" sideWeight="0.50076103" side_tool="true" weight="0.14247599" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -432,13 +430,13 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32805908" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.32172996" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.2879747" />
-      <window_info anchor="right" x="0" y="0" width="430" height="885" id="Documentation" sideWeight="0.5015244" side_tool="true" visible="true" weight="0.23188406" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.4984756" visible="true" weight="0.23188406" />
+      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.4984756" visible="true" weight="0.19583778" />
       <window_info anchor="right" id="Database" order="4" weight="0.32924226" />
       <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.33457845" />
+      <window_info anchor="right" x="0" y="0" width="430" height="885" id="Documentation" order="6" sideWeight="0.5015244" side_tool="true" visible="true" weight="0.23188406" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21184632" />
@@ -510,7 +508,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="update+++" />
-    <option name="LAST_COMMIT_MESSAGE" value="update+++" />
+    <MESSAGE value="add analysis to datadance" />
+    <option name="LAST_COMMIT_MESSAGE" value="add analysis to datadance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,11 +518,6 @@
           <url>file://$PROJECT_DIR$/zhihu.py</url>
           <line>44</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bytedance.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -635,12 +629,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bytedance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="108" column="13" lean-forward="true" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+        <state relative-caret-position="186">
+          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
           <folding>
             <element signature="e#19#49#0" expanded="true" />
             <marker date="1540741430113" expanded="true" signature="261:1179" ph="..." />
-            <marker date="1540741430113" expanded="true" signature="2152:3316" ph="..." />
           </folding>
         </state>
       </provider>
