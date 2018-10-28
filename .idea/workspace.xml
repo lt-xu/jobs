@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5efb327-1b5b-40c1-a607-d68ce760043a" name="Default Changelist" comment="">
+    <list default="true" id="f5efb327-1b5b-40c1-a607-d68ce760043a" name="Default Changelist" comment="add analysis to datadance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bytedance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+            <state relative-caret-position="519">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#19#49#0" expanded="true" />
                 <marker date="1540741430113" expanded="true" signature="261:1179" ph="..." />
@@ -217,7 +217,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -398,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540741832810</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add analysis to datadance">
+      <created>1540742109828</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540742109828</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -412,7 +419,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-5" width="1920" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.14247599" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.14247599" />
@@ -425,7 +431,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.17510548" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.23101266" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.23101266" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32805908" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.32172996" />
@@ -433,7 +439,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.4984756" visible="true" weight="0.19583778" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.4984756" visible="true" weight="0.19583778" />
       <window_info anchor="right" id="Database" order="4" weight="0.32924226" />
       <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.33457845" />
       <window_info anchor="right" x="0" y="0" width="430" height="885" id="Documentation" order="6" sideWeight="0.5015244" side_tool="true" visible="true" weight="0.23188406" />
@@ -629,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bytedance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="519">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#19#49#0" expanded="true" />
             <marker date="1540741430113" expanded="true" signature="261:1179" ph="..." />
